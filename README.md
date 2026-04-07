@@ -48,3 +48,11 @@ npx vercel
 ├── vite.config.js
 └── vercel.json         # SPA routing config
 ```
+
+## TODO
+
+- [ ] Replace About section placeholder with Sandra's actual portrait
+- [ ] Connect Skedily for online booking
+- [ ] Add more portfolio photos
+- [ ] Set up contact form backend (Supabase / email service)
+- [ ] Custom domain (jakovsa.com)
