@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&amp;display=swap');
+  </style>
+  <rect x="16" y="16" width="68" height="68" fill="none" stroke="#2A2A2A" stroke-width="1"/>
+  <rect x="21" y="21" width="58" height="58" fill="none" stroke="#C4A97D" stroke-width="0.5"/>
+  <text x="50" y="56" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="32" font-weight="300" fill="#2A2A2A" letter-spacing="2">JS</text>
+</svg>

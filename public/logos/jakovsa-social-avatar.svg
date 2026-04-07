@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&amp;family=Jost:wght@300&amp;display=swap');
+  </style>
+  <rect x="0" y="0" width="200" height="200" fill="#2A2A2A"/>
+  <text x="100" y="92" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="30" font-weight="300" fill="#F8F4EF" letter-spacing="4">JAKOVSA</text>
+  <line x1="55" y1="104" x2="145" y2="104" stroke="#C4A97D" stroke-width="0.5"/>
+  <text x="100" y="120" text-anchor="middle" font-family="Jost, sans-serif" font-size="8" font-weight="300" fill="#C4A97D" letter-spacing="4">PHOTOGRAPHY</text>
+</svg>

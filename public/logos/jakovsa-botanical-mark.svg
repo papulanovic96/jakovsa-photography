@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&amp;display=swap');
+  </style>
+  <circle cx="50" cy="46" r="38" fill="none" stroke="#2A2A2A" stroke-width="0.8"/>
+  <text x="50" y="54" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="40" font-weight="300" font-style="italic" fill="#2A2A2A">J</text>
+  <path d="M22 72 Q34 66 50 70 Q66 74 78 68" fill="none" stroke="#C4A97D" stroke-width="0.7"/>
+</svg>
