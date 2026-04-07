@@ -11,6 +11,16 @@ export default function Portfolio() {
 
   return (
     <section id="portfolio" ref={ref} style={{ padding: '120px 32px', background: 'var(--ivory)' }}>
+      <style>{`
+        .gallery-item {
+          animation: galleryFadeIn 0.5s var(--ease-out) both;
+        }
+        @keyframes galleryFadeIn {
+          from { opacity: 0; transform: translateY(16px) scale(0.97); }
+          to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+      `}</style>
+
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
         {/* Header */}
         <div className="reveal" style={{ textAlign: 'center', marginBottom: 48 }}>
@@ -48,34 +58,51 @@ export default function Portfolio() {
           ))}
         </div>
 
-        {/* Gallery grid */}
+        {/* Gallery grid — keyed by activeCat to re-trigger animations */}
         <div
+          key={activeCat}
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
             gap: 20,
           }}
         >
-          {filtered.map((item, i) => (
-            <div
-              key={item.id}
-              className="reveal photo-frame gallery-img-wrap"
-              style={{ transitionDelay: `${Math.min(i * 0.07, 0.4)}s`, cursor: 'pointer' }}
-              onClick={() => setLightbox(item)}
-            >
-              <img
-                src={item.src}
-                alt={item.alt}
-                loading="lazy"
-                style={{
-                  width: '100%',
-                  aspectRatio: item.cat === 'portreti' ? '3/4' : '4/3',
-                  objectFit: 'cover',
-                  objectPosition: item.pos || 'center',
-                }}
-              />
+          {filtered.length > 0 ? (
+            filtered.map((item, i) => (
+              <div
+                key={item.id}
+                className="gallery-item photo-frame gallery-img-wrap"
+                style={{ animationDelay: `${i * 0.07}s`, cursor: 'pointer' }}
+                onClick={() => setLightbox(item)}
+              >
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  loading="lazy"
+                  style={{
+                    width: '100%',
+                    aspectRatio: '4/3',
+                    objectFit: 'cover',
+                    objectPosition: item.pos || 'center',
+                  }}
+                />
+              </div>
+            ))
+          ) : (
+            <div style={{
+              gridColumn: '1 / -1',
+              textAlign: 'center',
+              padding: '60px 20px',
+              animation: 'galleryFadeIn 0.5s var(--ease-out) both',
+            }}>
+              <p style={{ fontFamily: 'var(--font-accent)', fontSize: 20, fontStyle: 'italic', color: 'var(--warm-gray)', marginBottom: 8 }}>
+                Fotografije uskoro dolaze
+              </p>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 300, color: 'var(--warm-gray-light)' }}>
+                Sandra priprema nove radove za ovu kategoriju
+              </p>
             </div>
-          ))}
+          )}
         </div>
 
         {/* CTA */}

@@ -16,9 +16,9 @@ const inputStyle = {
 
 const CONTACT_INFO = [
   { icon: Phone, label: 'Telefon', value: '069/2219979', href: 'tel:+381692219979' },
-  { icon: Mail, label: 'Email', value: 'jakovsa@photography.rs', href: 'mailto:jakovsa@photography.rs' },
+  { icon: Mail, label: 'Email', value: 'sandrajakovljevic@yahoo.com', href: 'mailto:sandrajakovljevic@yahoo.com' },
   { icon: Instagram, label: 'Instagram', value: '@jakovsa', href: 'https://www.instagram.com/jakovsa/' },
-  { icon: MapPin, label: 'Lokacija', value: 'Srbija', href: null },
+  { icon: MapPin, label: 'Lokacija', value: 'Novi Sad, Srbija', href: null },
 ];
 
 export default function Contact() {
@@ -66,6 +66,18 @@ export default function Contact() {
                 <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(24px, 3vw, 32px)', fontWeight: 400, color: 'var(--ivory)' }}>
                   Zakažite termin online
                 </h3>
+                <span style={{
+                  fontFamily: 'var(--font-body)',
+                  fontSize: 9,
+                  fontWeight: 400,
+                  letterSpacing: '0.1em',
+                  textTransform: 'uppercase',
+                  color: 'var(--charcoal)',
+                  background: 'var(--champagne)',
+                  padding: '4px 10px',
+                  borderRadius: 2,
+                  whiteSpace: 'nowrap',
+                }}>Uskoro</span>
               </div>
               <style>{`
                 @media (min-width: 700px) {
@@ -85,11 +97,12 @@ export default function Contact() {
                 fontSize: 14,
                 flexShrink: 0,
                 letterSpacing: '0.18em',
+                opacity: 0.6,
+                cursor: 'default',
               }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = 'var(--ivory)'; e.currentTarget.style.color = 'var(--charcoal)'; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = 'var(--champagne)'; e.currentTarget.style.color = 'var(--white)'; }}
+              disabled
             >
-              <Calendar size={16} /> Zakaži termin
+              <Calendar size={16} /> Uskoro dostupno
             </button>
           </div>
         </div>

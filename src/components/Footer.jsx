@@ -37,7 +37,7 @@ export default function Footer() {
               {[
                 { icon: Phone, text: '069/2219979', href: 'tel:+381692219979' },
                 { icon: Instagram, text: '@jakovsa', href: 'https://www.instagram.com/jakovsa/' },
-                { icon: MapPin, text: 'Srbija', href: null },
+                { icon: MapPin, text: 'Novi Sad, Srbija', href: null },
               ].map(({ icon: Icon, text, href }) => (
                 <a
                   key={text}

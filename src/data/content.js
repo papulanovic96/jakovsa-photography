@@ -7,18 +7,18 @@ export const PORTFOLIO = [
   { id: 6, src: "/photos/wedding-walk.png", cat: "vencanja", alt: "Mladenci šetaju kaldrmom" },
   { id: 7, src: "/photos/family-baby.png", cat: "porodica", alt: "Porodična fotografija sa bebom" },
   { id: 8, src: "/photos/baptism-church.png", cat: "krstenja", alt: "Krštenje u crkvi", pos: "top" },
-  { id: 9, src: "/photos/portrait-redhead.png", cat: "portreti", alt: "Portret žene sa crvenom kosom" },
-  { id: 10, src: "/photos/prints-christmas.png", cat: "posebne", alt: "Štampane fotografije na božićnom poklonu" },
-  { id: 11, src: "/photos/photobook-christmas.png", cat: "posebne", alt: "Foto album — božićno izdanje" },
+  { id: 9, src: "/photos/portrait-redhead.png", cat: "izlozbe", alt: "Portret žene sa crvenom kosom" },
+  { id: 10, src: "/photos/prints-christmas.png", cat: "izlozbe", alt: "Štampane fotografije — božićna kolekcija" },
+  { id: 11, src: "/photos/photobook-christmas.png", cat: "izlozbe", alt: "Foto album — božićno izdanje" },
 ];
 
 export const CATEGORIES = [
   { key: "sve", label: "Sve" },
   { key: "vencanja", label: "Venčanja" },
   { key: "krstenja", label: "Krštenja" },
-  { key: "portreti", label: "Portreti" },
   { key: "porodica", label: "Porodica" },
-  { key: "posebne", label: "Posebne prilike" },
+  { key: "punoletstva", label: "Punoletstva" },
+  { key: "izlozbe", label: "Moje izložbe" },
 ];
 
 export const SERVICES = [
